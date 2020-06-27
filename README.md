@@ -11,11 +11,13 @@ Important steps towards understanding HR-Analytics:
 - [ ] Data cleaning, handling of missing value:
       There are many categorical variables with missing values. Different approaches have been taken to handle missing values.
       Label encoding and Dummy variables have been created for modeling.
-- [ ] Data Analysis:
+- [ ] Data Analysis
 - [ ] Building a Model
 - [ ] Prediction Accuracy
       
-      
+  
+  
 German version:  https://github.com/onarayan/HR_Analytics/blob/master/README.md.de     
+
 
 Data Source: JanataHack (https://datahack.analyticsvidhya.com/contest/janatahack-hr-analytics/)
