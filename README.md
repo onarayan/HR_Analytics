@@ -16,6 +16,6 @@ Important steps towards understanding HR-Analytics:
 - [ ] Prediction Accuracy
       
       
-German version:      
+German version:  https://github.com/onarayan/HR_Analytics/blob/master/README.md.de     
 
 Data Source: JanataHack (https://datahack.analyticsvidhya.com/contest/janatahack-hr-analytics/)
