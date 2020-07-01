@@ -17,12 +17,14 @@ Diese Variable hat gemischte Dateneinträge (numerische und String). Deshalb wur
 kategorische Variabel ‚experience‘(Arbeitserfahrung) wurde ausgefüllt und wurden unterschiedliche Einträgebezeichnungen gleichmäßig ersetzt. 
 Die Einträgebezeichnungen wurden nach Binning sortiert, um der Anzahl der Einträgebezeichnungen zu reduzieren. 
 Einträgebezeichnungen wurden dann als ‚exp_level, umbenannt. Wenn kategorische Variabel viele Einträgebezeichnungen (mehr als 10; heißt auf Englisch ‚multicardinality‘), 
-dann ist Label Encoding empfohlen. Die Spalte ‚city‘(Stadt) wurde mit Label Encoding behandelt. Alle andere kategorische Variablen wurden mit Pandas in Dummy-Variabeln umgewandelt. Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
+dann ist Label Encoding empfohlen. Die Spalte ‚city‘(Stadt) wurde mit Label Encoding behandelt. Alle andere kategorische Variablen wurden mit Pandas in Dummy-Variabeln umgewandelt. 
+Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
 In diesem Datensatz gibt es keine fehlende numerische Variabel. Als die Werten von Minimum und Maximum der numerische Variable war zu groß, 
 wurde die Variable mit ‚logarithmic transformation‘ behandelt. 
 
 2. Analysen der Daten 
-Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) auf Output (die Spalte ‚target‘). Matplotlib- und Seaborn-Bibliothek wurden für die Darstellung verwendet. Es handelt um Binary-Klassifikation. 
+Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) auf Output (die Spalte ‚target‘). 
+Matplotlib- und Seaborn-Bibliothek wurden für die Darstellung verwendet. Es handelt um Binary-Klassifikation. 
 Die Datenanalyse zeigt, dass Jobwechseltendenz in männlich Arbeitskräfte höher als andere Geschlecht ist. 
 Außerdem wechseln ein höherer Anteil der Mitarbeiter mit Arbeitserfahrung von 3 bis 6 Jahre, mit STEM Bildungshintergrund bzw. in einem privaten Firmen Ihren Job.
 
