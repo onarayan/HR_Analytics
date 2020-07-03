@@ -17,7 +17,7 @@ Important steps towards understanding HR-Analytics:
       
   
   
-[German README](https://github.com/onarayan/HR_Analytics/blob/master/README.md.de)     
+[README in German] in (https://github.com/onarayan/HR_Analytics/blob/master/README.md.de)     
 
 
 [Data Source: JanataHackathon](https://datahack.analyticsvidhya.com/contest/janatahack-hr-analytics/)
