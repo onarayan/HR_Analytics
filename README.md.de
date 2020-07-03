@@ -22,18 +22,18 @@ Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
 In diesem Datensatz gibt es keine fehlende numerische Variabel. Als die Werten von Minimum und Maximum der numerische Variable war zu groß, 
 wurde die Variable mit ‚logarithmic transformation‘ behandelt. 
 
-2. Analysen der Daten 
-Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) auf Output (die Spalte ‚target‘). 
+2. Datenanalyse 
+Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) auf Output (die Spalte ‚Job_wechsel‘). 
 Matplotlib- und Seaborn-Bibliothek wurden für die Darstellung verwendet. Es handelt um Binary-Klassifikation. 
 Die Datenanalyse zeigt, dass Jobwechseltendenz in männlich Arbeitskräfte höher als andere Geschlecht ist. 
 Außerdem wechseln ein höherer Anteil der Mitarbeiter mit Arbeitserfahrung von 3 bis 6 Jahre, mit STEM Bildungshintergrund bzw. in einem privaten Firmen Ihren Job.
 
-3. Aufbauen des Modells 
+3. Modellaufbau 
 Nach Datenbereinigung und Ausfüllung der fehlenden Werten, der Datensatz wurden in ‚train‘ und ‚valid‘ aufgeteilt. 
 Verschiedene maschinellen Algorithmen (Logistic Regression, Random Forest, Support Vector Machine) wurden aus SK-Learn-Bibliothek importiert. 
 Diese Algorithmen wurden auf den Datensatz angewandt und die Vorhersage wurde gemacht.
 
-4. Auswerten des Modells 
+4. Auswertung des Modells 
 Die Genauigkeit des Modells ist wichtig, um zu sehen ob es zu realer Situation spiegelt. Normalerweise je höher die Genauigkeitsbewertung (Accuracy_score) ist, desto besser. 
 Sie noch im statistischen Detail zu verstehen, kann man confusion_matrix verwenden. 
 
