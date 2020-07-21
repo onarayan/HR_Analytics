@@ -10,18 +10,18 @@ Important steps towards understanding HR-Analytics:
 
 - [ ] Data cleaning, handling of missing value:
 
-       There are many categorical variables with missing values. Different approaches have been taken to handle missing values.
-       Label encoding and Dummy variables have been created for modeling.
+      There are many categorical variables with missing values. Different approaches have been taken to handle missing values.
+      Label encoding and Dummy variables have been created for modeling.
        
 - [ ] Data Analysis
 - [ ] Building a Model
 - [ ] Prediction Accuracy
 
-       The accuracy of the model is important to consider if it reflects the real-like situation. Usually the higher the Accuracy Score, the better the Model prediction is.
-       To understand them in statistical detail, confusion_matrix is appropriate. **Accuracy-Score from both Logistic Regression and XGB Classifier is 0.87**.
-       But the **number of employees with a job change request predicted by these models is 9 and 46**, respectively.
-       Although the Accurray Score for XGB Classifier and Logistic Regression is the same,
-       the number of employees with **a job change request that the XGBoost model predicted is higher**. This demonstrastes the better predicting power of XGBoost model.
+      The accuracy of the model is important to consider if it reflects the real-like situation. Usually the higher the Accuracy Score, the better the Model prediction is.
+      To understand them in statistical detail, confusion_matrix is appropriate. **Accuracy-Score from both Logistic Regression and XGB Classifier is 0.87**.
+      But the **number of employees with a job change request predicted by these models is 9 and 46**, respectively.
+      Although the Accurray Score for XGB Classifier and Logistic Regression is the same,
+      the number of employees with **a job change request that the XGBoost model predicted is higher**. This demonstrastes the better predicting power of XGBoost model.
       
   
   
