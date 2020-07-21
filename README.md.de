@@ -1,8 +1,9 @@
 ## HR_Analytics – Verstehen der Arbeitskräfte im Zeitalter des maschinellen Lernens
 Einleitung
 HR (Human Resources; Personalmanagement) kann ein Unternehmen zu großem Erfolg führen. Hier setzt das Management der Belegschaft an. 
-Das gute Verständnis der Mitarbeiter ist sehr wichtig. Die verschiedenen Faktoren des Mitarbeiters wie zum Beispiel Stadt, Bildung, Alter, Abschluss, Fach, Arbeitserfahrung usw. spielen eine wichtige Rolle. 
-Diese Faktoren können als Daten angesammelt werden. Diese Daten wiederum können analysiert werden und kann zur Rekrutierung, Mitarbeiterbindung, Arbeitsmarktanalyse oder Mitarbeiterentwicklung verwendet werden. 
+Das gute Verständnis der Mitarbeiter ist sehr wichtig. Die verschiedenen Faktoren des Mitarbeiters wie zum Beispiel Stadt, Bildung, Alter, 
+Abschluss, Fach, Arbeitserfahrung usw. spielen eine wichtige Rolle. Diese Faktoren können als Daten angesammelt werden. 
+Diese Daten wiederum können analysiert werden und kann zur Rekrutierung, Mitarbeiterbindung, Arbeitsmarktanalyse oder Mitarbeiterentwicklung verwendet werden. 
 Mit Hilfe der HR-Analytics kann das Personalmanagement dynamische und schneller reagieren.
 HR braucht ein Modell zu der Antwort von ein paar Fragen zu Jobveränderung oder nötige Maßnahmen für bestimmte Mitarbeitergruppe. 
 Das HR will auch wissen, die Wahrscheinlichkeit der Jobwechsel von neuem Mitarbeiter.
@@ -10,21 +11,21 @@ Das HR will auch wissen, die Wahrscheinlichkeit der Jobwechsel von neuem Mitarbe
 Wichtige Schritte im Verständnis des Datensatzes von HR-Analytics:
 
 1. Präparation der Daten 
-Der Datensatz war überprüft, welche Datentype (numerische oder kategorische) jede Spalte enthält. Nächste war der Prozentsatz der fehlenden Werten in jeder Spalte gecheckt. 
-Die Fehlenden Werten war angemessen behandelt. Für kategorische Variable, z.B. Gender (Geschlecht) mit Wert ‚unknown‘ ausgefüllt. 
-Eine Andere kategorische Variabel ‚last_new_job‘ bedeutsam mit ‚-1‘ ausgefüllt. Das bedeutet ‚Last_new_job‘ ist nicht bekannt. 
+Der Datensatz war überprüft, welche Datentype (numerische oder kategorische) jede Spalte enthält. Nächste war der Prozentsatz der fehlenden
+Werten in jeder Spalte gecheckt. Die Fehlenden Werten war angemessen behandelt. Für ## kategorische Variable, z.B. Gender (Geschlecht) 
+mit Wert ‚unknown‘ ausgefüllt. Eine Andere kategorische Variabel ‚last_new_job‘ bedeutsam mit ‚-1‘ ausgefüllt. Das bedeutet ‚Last_new_job‘ ist nicht bekannt. 
 Diese Variable hat gemischte Dateneinträge (numerische und String). Deshalb wurde String-Einträge mit Zahl ersetzt, um Gleichmäßigkeit der Einträge zu halten. 
 kategorische Variabel ‚experience‘(Arbeitserfahrung) wurde ausgefüllt und wurden unterschiedliche Einträgebezeichnungen gleichmäßig ersetzt. 
 Die Einträgebezeichnungen wurden nach Binning sortiert, um der Anzahl der Einträgebezeichnungen zu reduzieren. 
 Einträgebezeichnungen wurden dann als ‚exp_level, umbenannt. Wenn kategorische Variabel viele Einträgebezeichnungen (mehr als 10; heißt auf Englisch ‚multicardinality‘), 
-dann ist Label Encoding empfohlen. Die Spalte ‚city‘(Stadt) wurde mit Label Encoding behandelt. Alle andere kategorische Variablen wurden mit Pandas in Dummy-Variabeln umgewandelt. 
-Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
+dann ist Label Encoding empfohlen. Die Spalte ‚city‘(Stadt) wurde mit Label Encoding behandelt. Alle andere kategorische Variablen wurden mit Pandas 
+in Dummy-Variabeln umgewandelt. Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
 In diesem Datensatz gibt es keine fehlende numerische Variabel. Als die Werten von Minimum und Maximum der numerische Variable war zu groß, 
 wurde die Variable mit ‚logarithmic transformation‘ behandelt. 
 
 2. Datenanalyse 
-Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) auf Output (die Spalte ‚Job_wechsel‘). 
-Matplotlib- und Seaborn-Bibliothek wurden für die Darstellung verwendet. Es handelt um Binary-Klassifikation. 
+Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) 
+auf Output (die Spalte ‚Job_wechsel‘). Matplotlib- und Seaborn-Bibliothek wurden für die Darstellung verwendet. Es handelt um Binary-Klassifikation. 
 Die Datenanalyse zeigt, dass Jobwechseltendenz in männlich Arbeitskräfte höher als andere Geschlecht ist. 
 Außerdem wechseln ein höherer Anteil der Mitarbeiter mit Arbeitserfahrung von 3 bis 6 Jahre, mit STEM Bildungshintergrund bzw. in einem privaten Firmen Ihren Job.
 
