@@ -1,4 +1,5 @@
 ## HR_Analytics – Verstehen der Arbeitskräfte im Zeitalter des maschinellen Lernens
+
 Einleitung
 HR (Human Resources; Personalmanagement) kann ein Unternehmen zu großem Erfolg führen. Hier setzt das Management der Belegschaft an. 
 Das gute Verständnis der Mitarbeiter ist sehr wichtig. Die verschiedenen Faktoren des Mitarbeiters wie zum Beispiel Stadt, Bildung, Alter, 
@@ -32,11 +33,16 @@ Außerdem wechseln ein höherer Anteil der Mitarbeiter mit Arbeitserfahrung von 
 3. Modellaufbau 
 Nach Datenbereinigung und Ausfüllung der fehlenden Werten, der Datensatz wurden in ‚train‘ und ‚valid‘ aufgeteilt. 
 Verschiedene maschinellen Algorithmen (Logistic Regression, Random Forest, Support Vector Machine) wurden aus SK-Learn-Bibliothek importiert. 
+Zum Vergleich habe ich ein forgeschrittenes Modell, Gradient Boosting, verwendet. Dafür habe ich die XGBoost-Bibliothek importiert. 
+XGBoost (extreme Gradient boosting) setzt die Gradient Boosting um. Dieses Modell bietet eine gute Leistung und ermöglicht eine höhere Geschwindigkeit.
 Diese Algorithmen wurden auf den Datensatz angewandt und die Vorhersage wurde gemacht.
 
 4. Auswertung des Modells 
-Die Genauigkeit des Modells ist wichtig, um zu sehen ob es zu realer Situation spiegelt. Normalerweise je höher die Genauigkeitsbewertung (Accuracy_score) ist, desto besser. 
-Sie noch im statistischen Detail zu verstehen, kann man confusion_matrix verwenden. 
+Die Genauigkeit des Modells ist wichtig, um zu sehen ob es zu realer Situation spiegelt. Normalerweise je höher die Genauigkeitsbewertung (Accuracy-Score) ist, desto besser. 
+Sie noch im statistischen Detail zu verstehen, kann man confusion_matrix verwenden. Accuracy-Score von beiden Logistic Regression und XGB-Classifier sind 0.87. 
+Aber die Zahl des Arbeitsnehmers mit einem Jobänderungswunsch, die von beiden Modellen vorhergesagt sind 9 bzw. 46. 
+Obwohl die Accurray-Score für XGB-Classifier und Logistic Regression gleich sind, 
+die Zahl des Arbeitsnehmers mit einem Jobänderungswunsch, die das XGBoost-Model vorhergesagt hat ist duetlicher höher. 
 
 Fazit
 Datenanalyse wirft einen guten Einblick auf verschiedene Faktoren, unter anderem die hängen mit der Jobwechsel des neuen Mitarbeiters zusammen.
