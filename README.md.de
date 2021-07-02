@@ -13,16 +13,16 @@ Wichtige Schritte im Verständnis des Datensatzes von HR-Analytics:
 
 1. Präparation der Daten 
 Der Datensatz war überprüft, welche Datentype (numerische oder kategorische) jede Spalte enthält. Nächste war der Prozentsatz der fehlenden
-Werten in jeder Spalte gecheckt. Die Fehlenden Werten war angemessen behandelt. Für ## kategorische Variable, z.B. Gender (Geschlecht) 
-mit Wert ‚unknown‘ ausgefüllt. Eine Andere kategorische Variabel ‚last_new_job‘ bedeutsam mit ‚-1‘ ausgefüllt. Das bedeutet ‚Last_new_job‘ ist nicht bekannt. 
-Diese Variable hat gemischte Dateneinträge (numerische und String). Deshalb wurde String-Einträge mit Zahl ersetzt, um Gleichmäßigkeit der Einträge zu halten. 
-kategorische Variabel ‚experience‘(Arbeitserfahrung) wurde ausgefüllt und wurden unterschiedliche Einträgebezeichnungen gleichmäßig ersetzt. 
+Werten in jeder Spalte gecheckt. Die fehlenden Werten waren angemessen behandelt. Für ## kategorische Variable, z.B. Gender (Geschlecht) 
+mit Wert ‚unknown‘ ausgefüllt. Eine andere kategorische Variabel ‚last_new_job‘ bedeutsam mit ‚-1‘ ausgefüllt. Das bedeutet ‚Last_new_job‘ ist nicht bekannt. 
+Diese Variable hat gemischte Dateneinträge (numerische und String). Deshalb wurden String-Einträge mit Zahl ersetzt, um Gleichmäßigkeit der Einträge zu halten. 
+kategorische Variabel ‚experience‘(Arbeitserfahrung) wurden ausgefüllt und wurden unterschiedliche Einträgebezeichnungen gleichmäßig ersetzt. 
 Die Einträgebezeichnungen wurden nach Binning sortiert, um der Anzahl der Einträgebezeichnungen zu reduzieren. 
 Einträgebezeichnungen wurden dann als ‚exp_level, umbenannt. Wenn kategorische Variabel viele Einträgebezeichnungen (mehr als 10; heißt auf Englisch ‚multicardinality‘), 
 dann ist Label Encoding empfohlen. Die Spalte ‚city‘(Stadt) wurde mit Label Encoding behandelt. Alle andere kategorische Variablen wurden mit Pandas 
 in Dummy-Variabeln umgewandelt. Encoding als Zahl ist wichtig für maschinellen Lernen-Algorithmen.
 In diesem Datensatz gibt es keine fehlende numerische Variabel. Als die Werten von Minimum und Maximum der numerische Variable war zu groß, 
-wurde die Variable mit ‚logarithmic transformation‘ behandelt. 
+wurden die Variablen mit ‚logarithmic transformation‘ behandelt. 
 
 2. Datenanalyse 
 Daten wurden dargestellt, um zu analysieren welcher Zusammenhang bzw. Einfluss haben Variabeln (z.B. Geschlecht, Bildung, Abschluss, Erfahrung) 
@@ -31,7 +31,7 @@ Die Datenanalyse zeigt, dass Jobwechseltendenz in männlich Arbeitskräfte höhe
 Außerdem wechseln ein höherer Anteil der Mitarbeiter mit Arbeitserfahrung von 3 bis 6 Jahre, mit STEM Bildungshintergrund bzw. in einem privaten Firmen Ihren Job.
 
 3. Modellaufbau 
-Nach Datenbereinigung und Ausfüllung der fehlenden Werten, der Datensatz wurden in ‚train‘ und ‚valid‘ aufgeteilt. 
+Nach Datenbereinigung und Ausfüllung der fehlenden Werten, der Datensatz wurde in ‚train‘ und ‚valid‘ aufgeteilt. 
 Verschiedene maschinellen Algorithmen (Logistic Regression, Random Forest, Support Vector Machine) wurden aus SK-Learn-Bibliothek importiert. 
 Zum Vergleich habe ich ein forgeschrittenes Modell, Gradient Boosting, verwendet. Dafür habe ich die XGBoost-Bibliothek importiert. 
 XGBoost (extreme Gradient boosting) setzt die Gradient Boosting um. Dieses Modell bietet eine gute Leistung und ermöglicht eine höhere Geschwindigkeit.
